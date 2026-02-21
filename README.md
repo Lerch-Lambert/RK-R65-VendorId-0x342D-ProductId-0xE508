@@ -22,6 +22,7 @@ The second problem is that even when I changed the Product ID and Vendor ID with
 I changed the following lines within the json file to get this keyboard working properly with VIA.
 
   "vendorId": "0x342D",
+  
   "productId": "0xE508",
 
 AND
