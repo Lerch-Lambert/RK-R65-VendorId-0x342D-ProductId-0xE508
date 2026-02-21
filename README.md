@@ -20,6 +20,7 @@ I recently bought a new keyboard from Amazon, and started looking for a json to 
 The second problem is that even when I changed the Product ID and Vendor ID within the json to match my keyboard, the keys were all skewed to the wrong positions within the configuration tab of VIA.  It turns out that this was happening because of a design oversight on the keyboard.  The physical keyboard has 15 columns.  However, it seems that the firmware on the keyboard is 16 columns.  There was one simple line of code in the json that resolved this issue (changed 15 to 16).
 
 I changed the following lines within the json file to get this keyboard working properly with VIA.
+
   "vendorId": "0x342D",
   "productId": "0xE508",
 
